@@ -401,3 +401,8 @@ header nav div {
   justify-content: center;
   color: #FFFFFF;
 }
+
+.footer-section p{
+  border-top:1px	solid
+rgba(229, 231, 235, 0.2);
+}
