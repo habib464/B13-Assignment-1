@@ -46,7 +46,7 @@ header nav div {
   padding: 12px 16px 12px 16px;
   border-radius: 4px;
   color: rgba(255, 255, 255, 1);
-  background-color: #30b868;
+  background-color: #469165;
   border: none;
   font-size: 16px;
   font-weight: 600;
@@ -138,7 +138,6 @@ header nav div {
   font-weight: 700;
   padding: 16.5px 12px 16.5px 12px;
   border-radius: 4px;
-  /* width: 198px; */
   display: flex;
   gap: 10px;
   align-items: center;
@@ -287,4 +286,56 @@ header nav div {
   width: 20px;
   height: 20px;
   content: "";
+}
+
+
+.uni-section{
+  padding: 2px 120px 120px 120px;
+}
+.uni-container {
+  padding: 80px 40px;
+  background-color: #F7F6F2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  border-radius: 12px;
+}
+
+.uni-container .first, .second{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.uni-container .first >h1{
+  color: #001931;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+
+
+.uni-container .first, .second > p{
+  color: #627382;
+}
+
+.uni-container .first{
+  gap: 2;
+}
+.uni-container > .first >  a > button{
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #469165;
+  border: none;
+  border-radius: 4px;
+  color: #FFFFFF;
+}
+
+.uni-container .second > a{
+  text-decoration: none;
 }
