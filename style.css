@@ -7,7 +7,6 @@ body {
   background: rgba(255, 255, 255, 1);
 }
 
-/* shared font style */
 .inter {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -16,49 +15,51 @@ body {
 }
 
 header nav {
-  width: 1600px;
   height: 92px;
   display: flex;
-  /* flex-direction: row; */
   justify-content: space-between;
   align-items: center;
   margin: 0px auto;
   padding: 16px 120px 16px 120px;
 }
 
+.nav-button {
+  background-color: #469165;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 16.5px 12px 16.5px 12px;
+  border-radius: 4px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.nav-button:hover{
+  outline: 1px solid #000000;
+  background-color: transparent;
+  color: #000000;
+}
+
 header nav div {
   width: 367px;
   height: 24px;
   display: flex;
-  /* flex-direction: row; */
   justify-content: space-between;
   align-items: center;
-}
-
-.btn {
-  width: 164px;
-  height: 44px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  padding: 12px 16px 12px 16px;
-  border-radius: 4px;
-  color: rgba(255, 255, 255, 1);
-  background-color: #469165;
-  border: none;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 19px;
-  letter-spacing: 0%;
-  text-align: left;
-  text-transform: capitalize;
 }
 
 .link {
   color: #000000;
   text-decoration: none;
+  transition: all 0.3s;
+}
+
+.link:hover{
+  color: #469165;
 }
 
 .text-green {
@@ -71,14 +72,12 @@ header nav div {
   background-size: cover;
   background-position: center;
   height: 674px;
-  /* position: relative; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .hero-content {
-  /* margin: 115.5px 120px 179.5px 120px; */
   height: 379px;
   width: 1360px;
   display: flex;
@@ -122,6 +121,8 @@ header nav div {
   margin: 0px auto;
   border-radius: 1000px;
   background: rgba(255, 255, 255, 1);
+  border: none;
+  cursor: pointer;
 }
 
 .hero-buttons {
@@ -142,22 +143,34 @@ header nav div {
   gap: 10px;
   align-items: center;
   border: none;
+  cursor: pointer;
 }
 
 .bg-green{
   background-color: #469165;
   color: #ffffff;
+  transition: all 0.3s;
+}
+
+.bg-green:hover{
+  background-color: transparent;
+  outline: 1px solid #FFFFFF;
 }
 
 .bg-transparent{
   background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 1);
+  outline: 1px solid rgba(255, 255, 255, 1);
   color: #FFFFFF;
+  transition: all 0.3s;
+}
+.bg-transparent:hover{
+  background-color: #469165;
+  outline: none;
 }
 
 
 .card-section{
-  height: 448px;
+  padding: 32px 0;
   text-align: center;
   background-color: rgba(251, 251, 251, 1);
 }
@@ -186,12 +199,11 @@ header nav div {
   display: flex;
   gap: 24px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .card{
-  height: 300px;
-  width: 322px;
+  height: 322px;
   padding: 24px;
   border-radius: 8px;
   display: flex;
@@ -229,11 +241,10 @@ header nav div {
 
 
 .bi-section{
-  /* margin: 0 120px 0 120px; */
   padding: 120px;
   display: flex;
   gap: 60px;
-  justify-content: center;
+  justify-content: start;
 }
 
 .bi-image > img{
@@ -244,8 +255,10 @@ header nav div {
 .bi-content{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: start;
   gap: 40px;
-  width: 483px;
+  width: 500px;
 }
 
 .bi-content > .top {
@@ -303,6 +316,11 @@ header nav div {
   border-radius: 12px;
 }
 
+.uni-container .first{
+  width: 600px;
+  text-align: center;
+}
+
 .uni-container .first, .second{
   display: flex;
   flex-direction: column;
@@ -316,8 +334,6 @@ header nav div {
   font-weight: bold;
 }
 
-
-
 .uni-container .first, .second > p{
   color: #627382;
 }
@@ -325,8 +341,9 @@ header nav div {
 .uni-container .first{
   gap: 2;
 }
-.uni-container > .first >  a > button{
+.uni-container > .second >  a > button{
   padding: 12px 16px;
+  font-weight: 700;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -334,8 +351,53 @@ header nav div {
   border: none;
   border-radius: 4px;
   color: #FFFFFF;
+  transition:all 0.3s;
+}
+
+.uni-container > .second >  a > button:hover{
+  background-color:  #2c6243;
 }
 
 .uni-container .second > a{
   text-decoration: none;
+  box-shadow:  0px 10px 20px 0px rgba(0, 0, 0, 0.15);;
+}
+
+.footer-section{
+  background-color: #001931;
+  padding: 120px 120px 30px 120px;
+  gap: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-section .footer-top{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-top .social{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-top .social .icons{
+  display: flex;
+  gap: 16px;
+  cursor: pointer;
+}
+
+.footer-top .social >h2{
+  font-size: 20px;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+.footer-section >p{
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
 }
